@@ -1,0 +1,38 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Item</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Last</th>
+      <th scope="col">Email</th>
+       <th scope="col">Phone Number</th>
+       <th scope="col">Address</th>
+       <th scope="col">Modify</th>
+     
+      <th scope="col" class="text-end">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {{#each rows}} 
+    <tr>
+      <th scope="row">{{this.id}}</th>
+      <td>{{this.item}}</td>
+      <td>{{this.amount}}</td>
+      <td>{{this.category}}</td>
+      <td>{{this.location}}</td>
+      <td>{{this.createdOn}}</td>
+      <td>{{this.spendOn}}</td>
+      <td>{{this.modifyOn}}</td>
+     
+     
+      <td class="text-end"><a href = "#" type = "button" class = "btn btn-light btn-small"><i class = "bi bi-eye"></i>View</a>
+      <a href = "#" type = "button" class = "btn btn-light btn-small"><i class = "bi bi-pencil"></i>Edit</a>
+      <a href = "#" type = "button" class = "btn btn-light btn-small"><i class = "bi bi-person-x"></i>Delete</a>
+      </td>
+    </tr>
+    {{/each}}
+
+  </tbody>
+</table>
